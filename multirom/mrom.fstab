@@ -1,0 +1,11 @@
+/boot       emmc   /dev/block/mmcblk0p60
+/recovery   emmc   /dev/block/mmcblk0p61
+/system     ext4   /dev/block/mmcblk0p64
+/data       ext4   /dev/block/mmcblk0p65	flags=encryptable=footer
+/cache      ext4   /dev/block/mmcblk0p62
+/persist	ext4   /dev/block/mmcblk0p57
+/firmware   vfat   /dev/block/mmcblk0p49
+/cust		ext4   /dev/block/mmcblk0p63
+
+/sdcard1    auto   /dev/block/mmcblk1p1 
+/usb_otg	vfat   /dev/block/sda1 	/dev/block/sda		flags=display="USB-OTG";storage;wipeingui;removable
