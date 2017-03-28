@@ -1,3 +1,0 @@
-ro.hardware.keystore=msm8952
-persist.sys.usb.config=mtp,adb
-

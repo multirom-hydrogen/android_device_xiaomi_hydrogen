@@ -59,12 +59,6 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS :=  --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 BOARD_CUSTOM_BOOTIMG_MK := $(BOARD_PATH)/mkbootimg.mk
 TARGET_PREBUILT_KERNEL := $(BOARD_PATH)/kernel
-# Encryption
-# Switch on encryption support here.
-TARGET_HW_DISK_ENCRYPTION := true
-
-# Keymaster Setting
-TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Partitions
 
@@ -95,14 +89,6 @@ TW_EXTRA_LANGUAGES := true
 TW_DEFAULT_BRIGHTNESS := 60
 TW_INCLUDE_NTFS_3G := true
 
-# Vendor Init
-# Maybe this is an essential for enabling decryption.
-TARGET_INIT_VENDOR_LIB := libinit_msm
-
-# Enable logcat support
-TWRP_INCLUDE_LOGCAT := true
-TARGET_USES_LOGD := true
-
 # MR config. MultiROM also uses parts of TWRP config
 TARGET_RECOVERY_IS_MULTIROM := true
 MR_NO_KEXEC := 2
@@ -130,5 +116,3 @@ MR_DEV_BLOCK_BOOTDEVICE := true
 
 #Force populating from the emmc
 MR_POPULATE_BY_NAME_PATH := "/dev/block/platform/soc.0/7824900.sdhci/by-name"
-
-
