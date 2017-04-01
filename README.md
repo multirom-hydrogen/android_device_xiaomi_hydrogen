@@ -1,4 +1,4 @@
-## TWRP device tree for Xiaomi Mi Max (hydrogen)
+## TWRP with MultiROM - device tree for Xiaomi Mi Max (hydrogen)
 
 Add to `.repo/local_manifests/hydrogen.xml`:
 
@@ -20,3 +20,6 @@ make -j8 recoveryimage
 ```
 
 Kernel sources are available at: https://github.com/LineageOS/android_kernel_xiaomi_msm8956
+
+## Feat. for encryption support porting
+TheStrix, Abdess, AnClark
