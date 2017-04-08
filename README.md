@@ -21,5 +21,9 @@ make -j8 recoveryimage
 
 Kernel sources are available at: https://github.com/LineageOS/android_kernel_xiaomi_msm8956
 
-## Feat. for encryption support porting
-TheStrix, Abdess, AnClark
+## Credits
+### Device tree creation
+- Abdess
+### Porting encryption support
+- TheStrix
+- AnClark
